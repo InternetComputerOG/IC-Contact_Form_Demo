@@ -15,10 +15,8 @@ window.onload = function() {
     .then(function() {
       alert('Message Sent, I\'ll get back to you shortly');
     },
-    function(error) {
+    function() {
       alert( 'An error occured, Please try again');
-      console.log(error);
-      console.log(endpoint.TemplateID);
     })
   })
 };
