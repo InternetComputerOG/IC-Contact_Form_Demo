@@ -7,8 +7,10 @@ import endpoint from './endpoints.config';
 })();
 
 window.onload = function() {
+  // @ts-ignore: Object is possibly 'null'.
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
+    // @ts-ignore: Argument of type 'HTMLElement' is not assignable to parameter of type 'string | HTMLFormElement'.
     emailjs.sendForm('service_hde9yca', endpoint.TemplateID, this)
     .then(function() {
       alert('Message Sent, I\'ll get back to you shortly');
