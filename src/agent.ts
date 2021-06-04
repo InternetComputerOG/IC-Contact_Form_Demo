@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Actor, HttpAgent } from "@dfinity/agent"
 import { idlFactory as counter_idl, canisterId as counter_id } from "dfx-generated/counter"
 
